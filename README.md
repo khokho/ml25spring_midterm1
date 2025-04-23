@@ -112,7 +112,7 @@ def check_is_spam(email: str):
     X = data_from_email(email)
     return model.predict(np.array([X]))[0]
 ```
-5. კარგი მეილის მაგალითი დამატებულია ![mail_good.txt](mail_good.txt) ფაილში. გადავცეთ ეს ტექსტი ჩვენს ფუნქციას:
+5. კარგი მეილის მაგალითი დამატებულია ![email_good.txt](email_good.txt) ფაილში. გადავცეთ ეს ტექსტი ჩვენს ფუნქციას:
 ```python
 good_email = open('email_good.txt').read()
 print('good email is_spam = ', check_is_spam(good_email))
@@ -121,7 +121,7 @@ print('good email is_spam = ', check_is_spam(good_email))
 ```
 good email is_spam =  0
 ```
-6. ანალოგიურად ცუდი მეილის მაგალითი დამატებულია ![mail_bad.txt](mail_bad.txt) ფაილში. ანალოგიურად გავუშვათ ისიც და მივიღეთ პასუხი:
+6. ანალოგიურად ცუდი მეილის მაგალითი დამატებულია ![email_bad.txt](email_bad.txt) ფაილში. ანალოგიურად გავუშვათ ისიც და მივიღეთ პასუხი:
 ```
 bad email is_spam =  1
 ```
