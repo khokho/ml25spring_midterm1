@@ -29,8 +29,9 @@ dy = np.sqrt((y_sub_mean**2).sum())
 # calculate pearson coefficient
 pearson_r = cov_x_y / (dx * dy)
 
-print(pearson_r)
+print(f'pearson coefficient = {pearson_r}')
 # verify it with scipy version of the calculation
 scipy_r = stats.pearsonr(x, y)
 print(scipy_r)
+print(f'pearson coefficient with scipy = {scipy_r}')
 assert pearson_r == scipy_r.statistic
