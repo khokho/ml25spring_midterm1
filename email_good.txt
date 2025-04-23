@@ -1,0 +1,15 @@
+subject: quick update on loader refactor
+
+hi julia,
+
+just a short progress report on the loader refactor:
+
+– integrated the new caching layer on monday  
+– unit tests pass on both linux and macos runners  
+– eight-hour overnight fuzzing finished with zero crashes
+
+i plan to open the pull request tomorrow at 15:00. please let me know if that timing clashes with anything on your side.
+
+thanks and have a great day.
+
+alex
