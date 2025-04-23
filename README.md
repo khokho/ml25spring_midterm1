@@ -40,8 +40,11 @@ assert pearson_r == scipy_r.statistic
 
 ## ამოცანა 2: სპამ ელფოსტის გამოვლენა
 
+ამოცანის სრუყოფილი კოდი არის ფაილ ![p2.py](p2.py) ფაილში.
+
 ამოცანის საკითხები:
 1. რეპოზიტორიაში ატვირთული მონაცემები: ![aleksandre_khokhiashvili_2_86214954.csv](aleksandre_khokhiashvili_2_86214954.csv)
+
 2.1. წავიკითხოთ და დავყოთ მონაცემები სასწავლ და სატესტო სეტებად:
 ```python
 df = pd.read_csv("./aleksandre_khokhiashvili_2_86214954.csv")
@@ -84,6 +87,7 @@ Confusion Matrix:
  [ 14 368]]
 ```
 3.3. 97% accuracy ცუდი არ არის, და ვხედავთ რომ false positive-ები და false negative-ები არც თუ ისე ბევრია.
+
 4.1. ტექსტის სპამზე შემოწმებისთვის ჯერ დაგვჭირდება ფუნქცია რომელიც დაგვეხმარება ტექსის მოდელის მონაცემებში გადაყვანაში `["words", "links", "capital_words", "spam_word_count"]`
 ```python
 spam_words = open('./spam-words-EN.txt').read().splitlines()
